@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GC Analyzer</title>
+    <script src="app.js"></script>
+</head>
+<body bgcolor="grey">
+<div style="text-align: center">
+    <h1>GARBAGE COLLECTION LOG REPORT</h1>
+    <input id="logger" type="file" name="log-file"/>
+    <button id="submitButton">Submit</button>
+</div>
+<pre style="text-align: center; white-space: pre-wrap;" id="logs"></pre>
+<div style="text-align: left;">
+    <div>
+        <span style="font-weight: bold; font-size: 1.1em">Problem(True/False): </span>
+        <span id="is-problem"></span>
+    </div>
+    <div>
+       <br> <span style="font-weight: bold; font-size: 1.1em">Problem Description: </span>
+        <ol style="text-align: left;" id="problem"></ol>
+    </div>
+    <div>
+     <br>   <span style="font-weight: bold; font-size: 1.1em">Allocated Size: </span>
+        <span id="allocated-size"></span>
+    </div>
+    <div>
+      <br>  <span style="font-weight: bold; font-size: 1.1em">Peak Size: </span>
+        <span id="peak-size"></span>
+    </div>
+	<div>
+      <br>  <span style="font-weight: bold; font-size: 1.1em">Throughput: </span>
+        <span id="throughput"></span>
+    </div>
+
+
+</div>
+
+</body>
+</html>
